@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+  </head>
+  <body>
+    <h1>SignUP</h1>
+    <form>
+      <section>
+        <fieldset>
+          <legend>필수 입력 사항</legend>
+          <div class="signUp_container">
+            <ul>
+              <li id="namme">
+                이름 :
+                <input type="text" />
+              </li>
+              <div style="margin-top: 12px" class="id">
+                <li id="id">
+                  ID :
+                  <input type="text" placeholder="6자 이상 20자 미만 공백 X" />
+                </li>
+              </div>
+              <div style="margin-top: 12px">
+                <li id="bw">
+                  PW :
+                  <input
+                    type="password"
+                    placeholder="대소문자로 입력해주세요."
+                  />
+                </li>
+              </div>
+              <div style="margin-top: 12px">
+                <li id="email">
+                  Email :
+                  <input type="text" />
+                </li>
+              </div>
+              <div style="margin-top: 12px">
+                <li id="tel">
+                  Tel :
+                  <input type="text" placeholder="010-1234-5678" />
+                </li>
+              </div>
+              <li style="list-style-type: none; margin-top: 14px">
+                <button>가입하기</button>
+                <button>취소</button>
+              </li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>취미</legend>
+          <ul>
+            <li>
+              <label for="coding">
+                <input type="checkbox" id="coding" /> 코딩
+              </label>
+              <label for="exercise">
+                <input type="checkbox" id="exercise" /> 운동
+              </label>
+              <label for="breathing">
+                <input type="checkbox" id="breathing" /> 숨쉬기
+              </label>
+              <label for="trip">
+                <input type="checkbox" id="trip" /> 여행
+              </label>
+              <label for="sleep">
+                <input type="checkbox" id="sleep" /> 잠자기
+              </label>
+              <label for="reading">
+                <input type="checkbox" id="reading" /> 독서
+              </label>
+              <label for="netflex">
+                <input type="checkbox" id="netflex" /> 넷플시청
+              </label>
+            </li>
+            <li>
+              <label for="male"> <input type="radio" id="male" />남 </label>
+              <label for="female"> <input type="radio" id="female" />여 </label>
+              <label for="secret">
+                <input type="radio" id="secret" />비밀
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </section>
+    </form>
+  </body>
+</html>

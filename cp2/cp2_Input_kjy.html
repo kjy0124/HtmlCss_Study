@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input</title>
+  </head>
+  <body>
+    <fieldset>
+      <!-- 한 묶음으로 묶어줌 -->
+      <legend>Login</legend>
+      <!-- Fieldset으로 묶은 컨테이너에 대한 범례 -->
+      <h1 style="color: rgb(88, 85, 85); text-align: center">Login</h1>
+      <div class="loginContainer">
+        <!-- form tag는 사용자가 입력한 데이터를 서버로 보내는 것이 목적으로 사용 -->
+        <!-- ex) 로그인, 회원가입, 검색 -->
+        <!-- <form action=""></form> -->
+        <!-- action : 입력 값을 전송할 서버의 url -->
+        <!-- method : 클라이언트가 입력한 데이터를 어떤식으로 전송할 것인지 (GET & POST) -->
+        <form>
+          <div class="idInput">
+            <label class="id"> ID : </label>
+            <input type="text" placeholder="아이디를 입력해주세요." />
+          </div>
+          <div style="margin-top: 15px" class="pwInput">
+            <label for="pw" class="password"> PW : </label>
+            <input
+              type="password"
+              placeholder="비밀번호룰 입력해주세요."
+              id="pw"
+            />
+          </div>
+          <button style="margin-top: 15px">Login</button>
+          <button style="margin-top: 15px">SignUp</button>
+        </form>
+      </div>
+    </fieldset>
+    <br />
+    <fieldset>
+      <legend>오늘의 점심은?</legend>
+      <h3>점메추</h3>
+      <input type="checkbox" /> 햄버거 <br /><input type="checkbox" /> 라면
+      <br /><input type="checkbox" /> 집밥....
+
+      <div>
+        <p>배고픔 20%</p>
+        <!-- 작업진행도 표시  -->
+        <progress value="20" , max="100"></progress>
+      </div>
+    </fieldset>
+  </body>
+</html>
