@@ -14,39 +14,54 @@
           <div class="signUp_container">
             <ul>
               <li id="namme">
-                이름 :
-                <input type="text" />
+                <label>이&nbsp;&ensp;&ensp;름 : </label>
+                <input type="text" oninput="this.value = this.value.replace('');" size="15" />
               </li>
               <div style="margin-top: 12px" class="id">
                 <li id="id">
-                  ID :
-                  <input type="text" placeholder="6자 이상 20자 미만 공백 X" />
+                  아&nbsp;이&nbsp;디 :
+                  <input type="text" style="width: 150px;" placeholder="6자 이상 20자 미만 공백 X" />
                 </li>
               </div>
               <div style="margin-top: 12px">
                 <li id="bw">
-                  PW :
+                  비밀번호 :
                   <input
                     type="password"
+                    style="width: 148px;"
                     placeholder="대소문자로 입력해주세요."
                   />
                 </li>
               </div>
               <div style="margin-top: 12px">
                 <li id="email">
-                  Email :
-                  <input type="text" />
+                  이&nbsp;메&nbsp;일 :
+                  <input type="text" style="width: 148px;"/>
+                  @
+                  <select name="" id="">
+                    <option value="">gmail.com</option>
+                    <option value="">naver.com</option>
+                    <option value="">daum.net</option>
+                  </select>
                 </li>
               </div>
               <div style="margin-top: 12px">
                 <li id="tel">
-                  Tel :
-                  <input type="text" placeholder="010-1234-5678" />
+                  휴&nbsp;대&nbsp;폰 : 
+                  <select name="" id="">
+                    <option value="">010</option>
+                    <option value="">011</option>
+                    <option value="">016</option>
+                  </select>
+                  -
+                  <input type="text" style="width: 50px;"/>
+                  -
+                  <input type="text" style="width: 50px;"/>
                 </li>
               </div>
               <li style="list-style-type: none; margin-top: 14px">
-                <button>가입하기</button>
-                <button>취소</button>
+                <input type="submit" value="SignUp">
+                <button>Cansel</button>
               </li>
             </ul>
           </div>
