@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>설문조사</title>
+  </head>
+  <body>
+    <fieldset>
+      <h1 style="text-align: center">설문조사 양식</h1>
+      <main>
+        <div class="link">
+          <ul>
+            <li>
+              <a href="#">개인 정보</a>
+            </li>
+            <li>
+              <a href="#">설문 문항</a>
+            </li>
+            <li>
+              <a href="#">기타</a>
+            </li>
+          </ul>
+        </div>
+        <form>
+          <div class="myInformation">
+            <h2>개인 정보</h2>
+            <fieldset>
+              <ul>
+                <div id="name" style="margin-bottom: 10px">
+                  <label for="name">이름 :</label>
+                  <input type="text" id="name" size="10" />
+                </div>
+                <div id="age" style="margin-bottom: 10px">
+                  <label for="age">나이 : </label>
+                  <input type="text" id="age" size="10" />
+                </div>
+                <div id="gender" style="margin-bottom: 10px">
+                  <label for="gender">성별 : </label>
+                  <select name="gender" id="gender">
+                    <option value="선택">선택</option>
+                    <option value="male">남자</option>
+                    <option value="female">여자</option>
+                  </select>
+                </div>
+                <div id="email" style="margin-bottom: 10px">
+                  <label for="email">이메일 : </label>
+                  <input type="text" id="email" size="13" />@
+                  <select name="email" id="email">
+                    <option value="input">직접입력</option>
+                    <option value="gmail">gmail.com</option>
+                    <option value="naver">naver.com</option>
+                    <option value="daum">daum.net</option>
+                  </select>
+                </div>
+                <div id="tel" style="margin-bottom: 10px">
+                  <label for="tel">
+                    휴대폰
+                    <select>
+                      <option value="선택">선택</option>
+                      <option value="010">010</option>
+                      <option value="011">011</option>
+                      <option value="016">016</option>
+                    </select>
+                    -
+                    <input type="text" id="tel" size="5" />
+                    -
+                    <input type="text" id="tel" size="5" />
+                  </label>
+                </div>
+              </ul>
+            </fieldset>
+            <div id="survey">
+              <h2>설문 문항</h2>
+              <fieldset>
+                <div class="like">
+                  <p>당신의 관심사를 선택해주세요.</p>
+                  <ul>
+                    <li>
+                      <label for="like1">
+                        <input type="checkbox" id="like1" /> 스포츠
+                      </label>
+                    </li>
+                    <li>
+                      <label for="like2">
+                        <input type="checkbox" id="like2" /> 음악
+                      </label>
+                    </li>
+                    <li>
+                      <label for="like3">
+                        <input type="checkbox" id="like3" /> 영화
+                      </label>
+                    </li>
+                    <li>
+                      <label for="like4">
+                        <input type="checkbox" id="like4" /> 드라마
+                      </label>
+                    </li>
+                    <li>
+                      <label for="like5">
+                        <input type="checkbox" id="like5" /> 독서
+                      </label>
+                    </li>
+                  </ul>
+                  <div id="feedback">
+                    피드백 :
+                    <textarea name="feedback" id="feedback"></textarea>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <br />
+          <input type="submit" style="float: right" />
+        </form>
+        <div style="margin-top: 30px; text-align: center">
+          <footer>&copy; 2024 설문조사 양식</footer>
+        </div>
+      </main>
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>설문조사 양식</title>
+  </head>
+  <body>
+    <h1>설문조사 양식</h1>
+    <p>모든 항목에 빠짐없이 체크해주십시오.</p>
+    <hr />
+    <form>
+      <fieldset>
+        <legend>개인정보</legend>
+        <label for="name">
+          이름
+          <input type="text" id="name" />
+        </label>
+        <br />
+        <label for="email"
+          >이메일주소
+          <input type="text" id="email" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>설문</legend>
+        <p>연령대가 어떻게 되십니까?</p>
+        <label for="age">
+          <input type="radio" id="age" /> 10대
+          <input type="radio" id="age" /> 20대
+          <input type="radio" id="age" /> 30대
+          <input type="radio" id="age" /> 40대
+          <input type="radio" id="age" /> 50대
+          <input type="radio" id="age" /> 그외
+        </label>
+        <p>
+          학원을 선택할 때 가장 중요하게 생각하는 것은 무엇입니까? 모두
+          고르시오.
+        </p>
+        <label for="reason">
+          <input type="checkbox" id="reason" /> 위치
+          <input type="checkbox" id="reason" /> 학원비
+          <input type="checkbox" id="reason" /> 강사
+          <input type="checkbox" id="reason" /> 시설
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>기타 의견</legend>
+        <textarea name="" id=""></textarea>
+      </fieldset>
+      <input type="submit" />
+    </form>
+    <hr />
+    <p>입력하느라 수고하셨습니다.</p>
+  </body>
+</html>
