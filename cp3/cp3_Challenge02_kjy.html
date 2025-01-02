@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUP</title>
+    <link rel="stylesheet" href="./css/cp3_challenge02_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up</h1>
+      <ul>
+        <form>
+          <div class="signup">
+            <div class="id">
+              <div class="t1">아이디</div>
+              <label for="id">
+                <input
+                  type="text"
+                  id="id"
+                  placeholder="사용하실 ID를 입력해주세요."
+                />
+              </label>
+            </div>
+            <div class="name">
+              <div class="t2">이름</div>
+              <label for="name">
+                <input type="text" id="name" placeholder="홍길동" />
+              </label>
+            </div>
+            <div class="pw">
+              <div class="t3">비밀번호</div>
+              <label for="pw">
+                <input
+                  type="password"
+                  id="pw"
+                  placeholder="사용하실 pw를 입력해주세요."
+                />
+              </label>
+            </div>
+            <div class="pw2">
+              <div class="t4">비밀번호 확인</div>
+              <label for="pw2">
+                <input
+                  type="password"
+                  id="pw2"
+                  placeholder=" 한 번 더 입력해주세요."
+                />
+              </label>
+            </div>
+            <div class="birth">
+              <div class="t5">생년월일</div>
+              <input type="date" />
+            </div>
+            <div class="tel">
+              <div class="t6">전화번호</div>
+              <!-- 레이블은 상단 유지 -->
+              <div class="tel-input">
+                <!-- 입력칸을 가로 정렬 -->
+                <select name="tel" id="tel">
+                  <option value="선택">선택</option>
+                  <option value="010">010</option>
+                  <option value="011">011</option>
+                  <option value="016">016</option>
+                </select>
+                <input type="text" class="telbox" placeholder="1234" />
+                <input type="text" class="telbox" placeholder="5678" />
+              </div>
+            </div>
+
+            <div class="gender">
+              <div class="t7">성별</div>
+              <label for="gender">
+                <input type="radio" id="gender" name="male" />남자
+                <input type="radio" id="gender" name="female" />여자
+              </label>
+            </div>
+            <div class="agree">
+              <h3>아래 약관에 동의를 눌러주세요.</h3>
+              <div class="check_list">
+                <div id="cl1">
+                  <label for="checkList">
+                    <input type="checkbox" id="checkList" />
+                    <p>
+                      [필수] 남과 비교하지 않기: 남과 나름 비교하지 않고 어제의
+                    나와 오늘의 나를 비교하여 얼마나 성장했는지 가늠해요.
+                    </p>
+                  </label>
+                </div>
+                <div id="ck2">
+                  <label for="checkList2">
+                    <input type="checkbox" id="checkList2" />
+                    <p>
+                      [필수] 시간을 투자하기: 시간을 투자하고 노력할 . 수있도록
+                      완성도 있고 성취감 있는 결과를 만들어낼 수 있어요.
+                    </p>
+                  </label>
+                </div>
+                <div id="ck3">
+                  <label for="checkList3">
+                    <input type="checkbox" id="checkList3" />
+                    <p>
+                      [필수] 함게할 동료를 만들기: 서로서로 가르쳐주고 배우기도
+                      하며 함께할 동료를 만들어보세요. 함께 성장할수록 마지막
+                      프로젝트의 완성도 또한 높아진답니다.
+                    </p>
+                  </label>
+                </div>
+                <div id="ck4">
+                  <label for="checkList4">
+                    <input type="checkbox" id="checkList4" />
+                    <p>
+                      [필수] 자원을 적극 활용하기: 저희 운영진은 여러분을 위해
+                      상시 대기중...! 모르는게 있으면 꼭! 물어봐주세요.😘
+                    </p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="btn">
+              <button class="signup_btn">가입하기</button>
+            </div>
+            <a href="#" class="link">사이트 구경하기</a>
+          </div>
+        </form>
+      </ul>
+    </div>
+  </body>
+</html>
