@@ -9,6 +9,7 @@ body {
   border: 3px solid rgb(155, 196, 73);
   border-radius: 20px;
   width: 500px;
+  /* 좌우 중앙 배열 */
   left: 50%;
   right: 50%;
   margin: 20% 20%;
@@ -25,7 +26,6 @@ h1 {
   border: none;
   color: rgb(155, 196, 73);
   box-sizing: border-box;
-  text-align: left;
   font-size: 20px;
   padding: 20px;
   border-radius: 15px;
@@ -72,6 +72,7 @@ h1 {
 }
 
 .agree {
+  /*회원가입 정보 등록 . 후 약관 동의 위에 구분 선 추가*/
   border-top: 1px solid rgb(155, 196, 73);
 }
 
