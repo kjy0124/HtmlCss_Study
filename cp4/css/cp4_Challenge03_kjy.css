@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+
+body {
+  background-color: rgb(165, 224, 246);
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fst {
+  background: linear-gradient(190deg, #ecebeb, #ffffff);
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 60px;
+  z-index: 2; /* 요소 두개가 올라감 */
+}
+
+.face {
+  width: 60px;
+  height: 50px;
+  position: relative;
+  top: 40px;
+  border: none;
+  border-radius: 100%;
+  margin-top: 10px;
+}
+
+.eye {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border: none;
+  border-radius: 100%;
+  position: relative;
+}
+
+.eye:nth-child(1) {float: left;}
+.eye:nth-child(2) {float: right;}
+
+.mouth {
+  width: 50px;
+  height: 8px;
+  background-color: rgb(249, 121, 121);
+  top: 30px;
+  right: 30px;
+  border-radius: 0 0 0 7px;
+  position: absolute;
+}
+
+.scd {
+  background: linear-gradient(180deg, #ecebeb, #ffffff);
+  border-radius: 65px;
+  width: 130px;
+  height: 130px;
+  position: relative;
+  top: 40px;
+  z-index: 1;
+}
+
+.arm {
+  position: relative;
+  z-index: 1;
+}
+
+.arm1 {
+  background-color: rgb(247, 180, 12);
+  width: 5px;
+  height: 60px;
+  position: relative;
+  left: 60px;
+  top: 20px;
+  transform: rotate(-50deg);/* 수직인 선을 옆으로 꺾음 */
+}
+
+.arm2 {
+  background-color: rgb(247, 180, 12);
+  width: 5px;
+  height: 60px;
+  position: relative; 
+  transform: rotate(50deg);
+  right: 65px;
+  bottom: 40px;
+}
+
+.btn {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  bottom: 90px;
+}
+
+.btn1 {
+  background-color: black;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  margin-bottom: 5px;
+}
+
+.trd {
+  background: linear-gradient(180deg, #ecebeb, #ffffff);
+  border-radius: 75px;
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.hat {
+  position: relative;
+  top: 80px;
+  left: 10px;
+  z-index: 3;
+  transform: rotate(10deg);
+}
+
+.hat1 {
+  background-color: #000;
+  border-radius: 10px 10px 0 0;
+  width: 70px;
+  height: 60px;
+}
+
+.hat2 {
+  background-color: #000000;
+  border-radius: 0 0 10px 10px;
+  width: 100px;
+  height: 10px;
+}
