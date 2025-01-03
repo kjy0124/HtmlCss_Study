@@ -1,0 +1,35 @@
+body {
+  background-color: rgb(227, 191, 30);
+}
+
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 700px;
+  height: 850px;
+  border: none;
+  border-radius: 15px;
+  padding: 50px;
+  padding-bottom: 20px;
+  background-color: white;
+  margin: auto; /* 컨테이너 중앙 정렬 */
+}
+
+.profile_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;  /*사진 중앙 정렬 */
+}
+
+#name {
+  text-align: center;
+}
+
+.profile, .hobby, .major, .like_food {
+  border-bottom: 1px solid rgb(227, 191, 30);
+  padding-bottom: 20px;
+}
