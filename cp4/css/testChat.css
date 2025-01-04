@@ -1,0 +1,52 @@
+body{
+  background-color: #f2f2f2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  /* 그냥 border-radius가 적용이 안될 시 부모 요소에 hidden을 주면 됨! */
+}
+
+.header_box {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: 700;
+}
+
+.main_box {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.chat_box{
+  /* background-color: yellow; */
+  padding: 3px;
+}
+
+.input_box{
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid gray;
+}
+
+.input_field {
+  border: none;
+  
+}
+
+.btn {
+  border: none;
+  background-color: blue;
+  color: white;
+}
