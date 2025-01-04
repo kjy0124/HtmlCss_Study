@@ -30,7 +30,8 @@ body{
 }
 
 .chat_box{
-  /* background-color: yellow; */
+  width: fit-content;
+  background-color: yellow;
   padding: 3px;
 }
 
