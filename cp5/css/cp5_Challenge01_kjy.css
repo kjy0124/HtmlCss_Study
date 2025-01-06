@@ -1,0 +1,120 @@
+body {
+  background-color: rgb(176, 175, 175);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  height: 500vh;
+}
+
+.container {
+  border: 3px solid rgb(227, 224, 230);
+  background-color: rgb(227, 224, 230);
+  border-radius: 15px;
+  width: 500px;
+  height: 700px;
+  padding: 0;
+  margin: auto;
+  margin-top: 20%;
+  overflow: hidden;
+}
+.chat-top {
+  text-align: center;
+}
+.mid {
+  background-color: white;
+  height: 550px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.chat-bottom {
+  margin-top: 5px;
+}
+
+#input {
+  margin-left: 5px;
+  width: 400px;
+  height: 55px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0.01px solid white;
+}
+
+#btn {
+  width: 80px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 0.01px solid white;
+  background-color: white;
+}
+
+.chat_box{
+  width: fit-content;
+  background-color: rgb(227, 224, 230);
+  padding: 3px;
+  height: 30px;
+  font-size: 16px;
+  padding-top: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+.chat_box:after {
+  content: "";
+  border-top: 9px solid rgb(227, 224, 230);
+  border-left: 16px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  top: 45px;
+  left: 46px;
+}
+
+p {
+  font-size: 12px;
+}
+
+/* 내 채팅 */
+.chat-mid2 {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: right;
+}
+
+.myChat {
+  background-color: rgb(239, 202, 152);
+  border-radius: 10px;
+  width: fit-content;
+  height: 30px;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.p1 {
+  font-size: 15px;
+}
+
+.profile {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  border: 2px solid #999;
+}
+
+.chat-mid {
+  width: 40%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-mid1 {
+  display: flex;
+  flex-direction: column;
+}
