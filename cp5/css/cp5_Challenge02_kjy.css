@@ -21,7 +21,7 @@ h1 {
 }
 .signup {
   width: 400px;
-  height: 600px;
+  height: 1060px;
   background-color: rgb(226, 226, 226);
   border: none;
   color: rgb(155, 196, 73);
@@ -175,8 +175,10 @@ select {
   }
 
   .signup {
+    height: 700px;
     font-size: 16px; /* 작은 화면에서는 폰트 크기 축소 */
     padding: 10px;
+    overflow: scroll;
   }
 
   .tel select,

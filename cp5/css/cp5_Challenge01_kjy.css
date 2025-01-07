@@ -12,7 +12,7 @@ body {
   background-color: rgb(227, 224, 230);
   border-radius: 15px;
   width: 500px;
-  height: 700px;
+  height: 720px;
   padding: 0;
   margin: auto;
   margin-top: 20%;
@@ -28,6 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: end;
+  justify-content: baseline;
 }
 
 .chat-bottom {
@@ -73,6 +74,17 @@ body {
   top: 45px;
   left: 46px;
 }
+
+/* .myChat:after {
+  content: "";
+  border-top: 9px solid rgb(239, 202, 152);
+  border-left: 0px solid transparent;
+  border-right: 16px solid transparent;
+  border-bottom: 0px solid transparent;
+  position: absolute;
+  bottom: -160px;
+  right: 8px;
+} */
 
 p {
   font-size: 12px;

@@ -1,0 +1,50 @@
+.parent {
+  display: inline-block;
+  margin: 0 20px;
+}
+.child {
+  width: 150px;
+  height: 150px;
+  background-color: teal;
+}
+
+
+/*-------------transform------------- */
+/* .parent:nth-child(1) > .child{transform: translate(30px, 50px);} */
+  /* 원하는 값만큼 위치(x, y)를 이동시킨다. */
+
+/* .parent:nth-child(2) > .child {transform: scale(1.2, 0.8);} */
+  /* transform: scale(넓이, 높이) : x, y축 값을 주는 것은 동일
+  하지만 몇 배 또는 축소할 것인가*/
+
+/* .parent:nth-child(3) > .child {transform: skew(45deg);} */
+  /*transform: skew(각도deg); : 비트는 것*/
+
+/* .parent:nth-child(4) > .child {transform: rotate(45deg);} */
+  /*transform: rotate(원하는 각도deg);
+  원하는 각도만큼 회전을 시킨다*/
+
+
+
+  /* -------------transition--------------- */
+  /* transition-property : 나는 어떤 속성에서 변화모션를 주겠다 */
+  /* transition-duration :  어떠한 시간 동안 애니메이션 효과을 주겠다*/
+  /* trasition-delay : 어떠한 시간 뒤에 효과를 준다 */
+/* transition-timing-function : 실행 시간 동안의 속도 변화 방식을 지정할 . 수있다. 
+transition-timing-function : ease; : 기본 값으로 점점 속도가 빨라지다가 끝날 때 다시 느려지는 방식
+transition-timing-function : linear; : 처음부터 끝까지 같은 속도로 진행
+transition-timing-function : ease-in; : 느리게 시작했다가 점점 빨라짐
+transition-timing-function : ease-out : 빠르게 시작했다가 점점 느려짐 */
+
+  /* hover : 
+  .parent:nth-child(4) > .child:hover : parent의 자식요소에 마우스를 얹었을 때
+   */
+  .parent:nth-child(4) > .child:hover {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    transition-property: width;
+    transition-duration: 5s;
+    transition-delay: 2s;
+    transition-timing-function: ease-out;
+  }
