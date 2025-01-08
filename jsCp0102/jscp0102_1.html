@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS0102_1</title>
+  <style>
+    #name{
+      color: blue;
+    }
+    #age {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="name"></h1>
+  <p id="age"></p>
+  <p id="color"></p>
+  <script>
+    const nameElement = document.querySelector('#name');
+    let name = prompt('당신의 이름은 무엇입니까?');
+    nameElement.textContent = name;
+
+    const ageElement = document.querySelector('#age');
+    let age = prompt('그럼 나이는 어떻게 되십니까?');
+    ageElement.textContent = `저의 나이는 ${age}살 입니다.`;
+
+    document.querySelector('#color').textContent = `좋아하는 색은 ${prompt('당신이 좋아하는 색은 무엇입니까?')}입니다.`
+
+    console.log(true);
+    name = 'true';
+    console.log(true);
+    name = null;
+    console.log(false);
+
+    let answer = confirm('취소ㅗ나 확인을 눌러보시겠습니까?');
+    console.log(`취소나 확인을 눌러보세요 ${answer}`);
+  </script>
+</body>
+</html>
