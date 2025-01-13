@@ -5,6 +5,27 @@ document.getElementById('add-btn').addEventListener('click', function () {
   // 3. li 요소는 클릭하면 해당 li 요소가 지워지는 delete 버튼을 가지고 있어야 합니다. (버튼이 실제로 동작하지 않아도 괜찮습니다.)
   // 4. 입력창은 초기화되어야 합니다.
   // 5. 만약 입력창에 아무것도 입력하지 않은 경우 alert로 유저에게 입력을 요청해야 합니다.
+  const input = document.getElementById('todo-input');
+  const newInput = input.value;
+
+  if (newInput !== ''){
+    const li = document.createElement('li');
+    li.textContent = newInput;
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.textContent = 'X';
+    deleteBtn.className = 'delete-btn';
+
+    deleteBtn.onclick = function() {
+      this.parentNode.remove();
+    };
+    li.appendChild(deleteBtn);
+
+    document.getElementById('todo-list').appendChild(li);
+    input.value = '';
+  } else {
+    alert('할 일을 입력해주세요.');
+  }
 });
 
 // 심화1) 입력한 TO-DO가 Local Storage에 저장되어 새로 고침 후에도 유지되도록 해보세요.
