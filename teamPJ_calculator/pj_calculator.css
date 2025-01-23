@@ -1,0 +1,124 @@
+/* 모든 요소의 기본 여백 제거 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* HTML과 Body의 기본 설정 */
+html, body {
+height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 1px solid black;
+  background-color: black;
+  width: 450px;
+  height: 720px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.top_btn {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: start;
+}
+
+#btn {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn1 {
+  background-color: red;
+}
+.btn2 {
+  background-color: orange;
+}
+.btn3 {
+  background-color: rgb(2, 198, 2);
+}
+
+.calculator_display {
+  border: none;
+  height: 20%;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 10px;
+  background-color: black;
+  color: white;
+}
+
+.result {
+  font-size:25px;
+  color: rgb(176, 166, 166);
+}
+
+.input {
+  font-size: 50px;
+  text-align: end;
+  background-color: black;
+  width: 100%;
+  border: none;
+  color: white;
+}
+
+.calculator_btn {
+  height: auto;
+  margin-top: 10%;
+  width: 100%;
+}
+
+.calculator_btn > div {
+  display: flex;
+  height: 53%;
+}
+
+.calculator_btn > div:last-child > div {
+  width: 100%;
+  /* display: flex; */
+}
+
+.calculator_btn > div:last-child > div:last-child {
+  display: flex;
+}
+
+.calculator_btn button {
+  width: 100%;
+  border: 0.5px solid rgb(111, 108, 108);
+  color: white;
+  background-color: gray;
+  font-size: 30px;
+  border-radius: 50%;
+}
+
+.calculator_btn button.operator {
+  font-weight: bold;
+  background-color: orange;
+}
+
+.calculator_btn button.operator_x, .calculator_btn button.clear{
+  background-color: rgb(176, 166, 166);
+}
+
+.zero {
+  flex-grow: 1;
+  border-radius: 25px !important;
+  height: 100%;
+}
+
