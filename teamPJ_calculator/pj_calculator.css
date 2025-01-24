@@ -17,14 +17,16 @@ body {
 }
 
 .container {
-  border: 1px solid black;
+  border: 1px solid white;
+  box-shadow: 5px 5px 5px rgb(130, 127, 127);
   background-color: black;
-  width: 450px;
+  width: 420px;
   height: 720px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   border-radius: 15px;
+  gap: 25px;
 }
 
 .top_btn {
@@ -59,7 +61,6 @@ body {
   justify-content: end;
   flex-direction: column;
   align-items: end;
-  margin-top: 10px;
   background-color: black;
   color: white;
 }
@@ -80,7 +81,6 @@ body {
 
 .calculator_btn {
   height: auto;
-  margin-top: 10%;
   width: 100%;
 }
 
@@ -102,7 +102,7 @@ body {
   width: 100%;
   border: 0.5px solid rgb(111, 108, 108);
   color: white;
-  background-color: gray;
+  background-color: rgb(59, 59, 59);
   font-size: 30px;
   border-radius: 50%;
 }
@@ -112,8 +112,8 @@ body {
   background-color: orange;
 }
 
-.calculator_btn button.operator_x, .calculator_btn button.clear{
-  background-color: rgb(176, 166, 166);
+.calculator_btn button.function{
+  background-color: rgb(130, 127, 127);
 }
 
 .zero {
@@ -122,3 +122,6 @@ body {
   height: 100%;
 }
 
+.button:active {
+  background-color: gray
+}
