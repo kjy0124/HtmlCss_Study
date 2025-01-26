@@ -8,11 +8,11 @@ let prev_num = null;
 let current_operator = null;
 
 //buttons을 통해 계산기의 모든 버튼을 순회
-buttons.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
+buttons.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
     //숫자 버튼을 클릭했을 때 클릭된 버튼을 타겟으로 한 텍스트를 가져옴
     let click_text = e.target.textContent;
-    console.log(click_text);
+    // console.log(click_text);
 
     //btn이 가리키는 버튼의 클래스 중 num이 있는지 확인
     if (btn.classList.contains("num")) {
@@ -27,41 +27,38 @@ buttons.forEach(function (btn) {
         display_num = display_num * 10 + click_text;
       }
       input.textContent = display_num;
-      console.log(typeof(display_num));
+      // console.log(typeof display_num);
     }
 
     //operator연산자
-    if (btn.classList.contains("operator")) {
+    if (btn.classList.contains('operator')) {
       if (prev_num === null) {
         prev_num = display_num;
-      } else if (current_operator){
+      } else if (current_operator) {
         prev_num = calculator(prev_num, current_operator, display_num);
       }
-      // console.log(display_num);
-      display_num = 0;
       current_operator = click_text;
-      input.textContent = prev_num;
-    }
-
-    //클릭한 버튼이 '=' 일 때
-    if(click_text === '='){
-      if (prev_num !== null && current_operator !== null) {
-        display_num = calculator(prev_num, current_operator, display_num);
-        result.textContent = result.display_num;
-        // console.log(display_num);
-        prev_num = null;
-        current_operator = null;
+      if (click_text === '=') {
+        result.textContent = prev_num;
+        input.innerHTML = 0
       }
+      display_num = 0;
+      console.log(prev_num);
+    }
+    
+    if (click_text === '±' && display_num !== 0) {
+      display_num = display_num * (-1);
+      input.textContent = display_num;
     }
   });
 });
 
-acBtn.addEventListener("click", function () {
-  display_num = 0;
-  prev_num = null;
-  current_operator = null;
-  result.textContent = display_num;
-  input.textContent = display_num;
+acBtn.addEventListener("click", () => {
+    display_num = 0;
+    prev_num = null;
+    current_operator = null;
+    result.innerHTML = '';
+    input.textContent = display_num;
 });
 
 function calculator(prev_num, current_operator, display_num) {
