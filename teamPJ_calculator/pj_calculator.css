@@ -1,13 +1,14 @@
 /* 모든 요소의 기본 여백 제거 */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* HTML과 Body의 기본 설정 */
-html, body {
-height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -19,9 +20,9 @@ body {
 .container {
   border: 1px solid white;
   box-shadow: 5px 5px 5px rgb(130, 127, 127);
-  background-color: black;
-  width: 420px;
-  height: 820px;
+  background-color: #1e1e1e;
+  width: 320px;
+  height: 600px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -58,40 +59,62 @@ body {
   border: none;
   height: 20%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: column;
-  align-items: end;
-  background-color: black;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  position: relative;
   color: white;
+  width: 100%;
+}
+
+.calculator_display > p {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  overflow: hidden;
+  text-align: right;
+  position: relative;
+}
+
+.calculator_display ::before {
+  content: ''; /* 가상 요소 생성 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(30, 30, 30, 1), rgba(30, 30, 30, 0)); /* 왼쪽에서 오른쪽으로 투명도 변화 */
+  z-index: 1; /* 텍스트 위에 배치 */ 
 }
 
 .result {
-  font-size:25px;
+  font-size: 27px;
   color: rgb(176, 166, 166);
 }
 
 .input {
-  font-size: 50px;
-  text-align: end;
-  background-color: black;
-  width: 100%;
+  font-size: 40px;
+  /* width: 100%; */
+  /* direction: rtl; */
   border: none;
   color: white;
 }
 
 .calculator_btn {
-  height: auto;
+  height: 90%;
   width: 100%;
 }
 
 .calculator_btn > div {
   display: flex;
-  height: 53%;
+  height: 20%;
 }
 
 .calculator_btn > div:last-child > div {
   width: 100%;
-  /* display: flex; */
+  display: flex;
 }
 
 .calculator_btn > div:last-child > div:last-child {
@@ -113,7 +136,7 @@ body {
   background-color: orange;
 }
 
-.calculator_btn button.function{
+.calculator_btn button.function {
   background-color: rgb(130, 127, 127);
 }
 
@@ -124,5 +147,5 @@ body {
 }
 
 .button:active {
-  background-color: gray
+  background-color: gray;
 }
